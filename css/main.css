@@ -1,0 +1,59 @@
+/*********************GENERAL CSS ***********************************/
+main {
+	text-align: center;
+	width: 100%;
+	font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+form {
+	margin: 50px 50px 50px 50px auto;
+	padding: 10px;
+}
+.box {
+	height: 70px;
+	width: 70px;
+	font-size: 2em;
+	font-family: sans-serif;
+	border: 1px solid blue;
+	background-color: transparent;
+	text-align: center;
+}
+.box:nth-child(-n+3) 
+	{border-top-style: none;}
+.box:nth-child(4n+3) 
+	{border-right-style: none;}
+.box:nth-child(n+8) 
+	{border-bottom-style: none;}
+.box:nth-child(4n-7) 
+	{border-left-style: none;}
+header 
+	{text-align: center;}
+footer 
+	{text-align: center;}
+.button {
+	margin: 25px;
+	font-size: 1em;
+}
+/************************** CSS-RESPONSIVE *************************/
+@media all and ( max-device-width: 640px ) and 
+( max-width: 640px ){
+	form {
+		width: 100%;
+		margin: 25px auto;
+		padding: 5px;
+		font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+	}
+	header {
+		display: none;
+		text-align: center;
+	}
+	h3 {		
+		font-size: 2em; 
+		margin:0; 
+		padding:0;
+	}
+	footer {		
+		font-size: 1em; 
+		margin:0; 
+		padding:0;
+	}
+}
